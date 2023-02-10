@@ -6,17 +6,17 @@ class StringFunctions {
      * capitalize('hello world') // 'Hello world'
      * capitalize('HELLO WORLD') // 'Hello world'
      */
-    capitalize(input) { 
-      return input; 
+    capitalize(input) {
+      return input;
     }
     /**
      * Returns a reversed string. Example: "abc" => "cba"
-     * @param {string} input - the string input to be processed 
+     * @param {string} input - the string input to be processed
      * @returns  {string} - the reversed string
      * @example
      * reverse('abc') // 'cba'
      */
-    reverse(input) { 
+    reverse(input) {
       return input;
     }
     /**
@@ -26,7 +26,7 @@ class StringFunctions {
      * @example
      * words('hello world') // ['hello', 'world']
      */
-    split(input) { 
-      return [input];
+    split(input) {
+      return input; // return an array of words
     }
 }
