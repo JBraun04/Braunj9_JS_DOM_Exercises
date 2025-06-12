@@ -36,7 +36,10 @@ class ArrayFunctions {
    * filter([1,2,3,5,6,2,4,2], 2); // [1,3,5,6,4]
    */
   filterOut(arr, item) {
-    return ;
+
+  const arrFiltered = arr.filter(element => element !== item);
+
+    return arrFiltered;
   }
 
   /**
@@ -48,7 +51,8 @@ class ArrayFunctions {
    * append([1,2,3], 4); // [1,2,3,4]
    */
   append(arr, item) {
-    // hint: push, slice, splice would all work. Pay attention to the return value in the docs
+
+    arr.push(item);
     return arr;
   }
 
@@ -61,7 +65,8 @@ class ArrayFunctions {
    * concat([1,2,3], [4,5,6]); // [1,2,3,4,5,6]
    */
   concat(arr1, arr2) {
-    return ;
+
+    return arr1.concat(arr2);
   }
 
   /**
@@ -73,6 +78,9 @@ class ArrayFunctions {
    */
   square(arr) {
     // hint: use .map
-    return ;
+
+    const arrSquared = arr.map((x) => x * x);
+
+    return arrSquared;
   }
 }
