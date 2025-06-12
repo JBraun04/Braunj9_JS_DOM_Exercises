@@ -20,7 +20,10 @@ class ArrayFunctions {
    */
   sum(arr) {
     // Hint: use the reduce method
-    return ;
+
+    const arrSum = arr.reduce((accumulator, currentValue) => 
+    accumulator + currentValue, 0);
+    return arrSum;
   }
 
   /**
